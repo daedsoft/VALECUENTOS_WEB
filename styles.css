@@ -11,7 +11,7 @@ body{
 }
 
 header{
-    width: 100%;
+    width: 97%;
     padding: 10px 15px;    
     display: flex;
     justify-content: space-between;
@@ -27,6 +27,13 @@ header{
 header h1{
     font-weight: 700;
     font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;    
 }
 
 .menu{
@@ -37,9 +44,39 @@ header h1{
     color: antiquewhite;
 }
 
-.container{
-    margin: 0 auto;
-    max-width: 900px;
+.menu-content{
+    position: absolute;
+    z-index: 10;
+    right: 0px;
+    top: 70px;
+    background-color: antiquewhite;
+    padding: 15px 20px;
+    max-height: 350px;
+    max-width: 360px;
+    overflow-y: auto;
+    border: 3px solid rgb(150, 98, 29);;
+    border-radius: 7px;
+    box-shadow: -3px 3px 10px burlywood;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.menu-content ul{
+    list-style: none;
+}
+
+.menu-content li{
+    border-bottom: 1px solid rgb(150, 98, 29);
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+
+.menu-content li:last-child{
+    border-bottom: 0;
+    margin-bottom: 0;
 }
 
 .book{
@@ -47,9 +84,35 @@ header h1{
     border: 2px solid burlywood;
     border-radius: 7px;
     box-shadow: -3px 3px 10px burlywood;
-    padding: 15px;
+    padding: 20px;
     margin: 20px 10px 10px 10px;
-    width: 100%;
-    height: calc(100vh - 40px);
+    width: 97%;
+    height: calc(100vh - 130px);
     overflow-y: auto;
+}
+
+/* extras */
+
+h2{
+    text-align: center;
+    font-size: 28px;
+    margin: 25px 0;        
+}
+
+p{
+    margin: 15px 0;
+    line-height: 32px;
+}
+
+.separator{
+    text-align: center;
+    margin: 30px 0;
+}
+
+.img{
+    width: 100%;
+    object-fit: cover;
+    border: 5px solid burlywood;
+    border-radius: 7px;
+    filter: sepia(70%);
 }

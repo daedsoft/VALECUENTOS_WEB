@@ -2,38 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-body{
-    font-family:Georgia, 'Times New Roman', Times, serif;
+body{    
     font-size: 20px;
     background-color:bisque;
 }
 
 header{
-    width: 97%;
-    padding: 10px 15px;    
+    width: 95%;
+    padding: 10px;    
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     background-color: burlywood;
-    border: 2px solid rgb(196, 137, 61);
+    border: 1px solid rgb(196, 137, 61);
     border-radius: 7px;
     box-shadow: -3px 3px 10px burlywood;
-    margin: 20px 10px 10px 10px;
+    margin: 10px;
 }
 
-header h1{
-    font-weight: 700;
-    font-size: 24px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+header h1{    
+    font-size: 24px;    
 }
 
 .container{
     margin: 0 auto;
-    max-width: 900px;
     width: 100%;    
+    max-width: 900px;
 }
 
 .menu{
@@ -41,7 +39,7 @@ header h1{
     border: 2px solid rgb(150, 98, 29);
     border-radius: 7px;
     padding: 10px 15px;
-    color: antiquewhite;
+    color: antiquewhite;    
 }
 
 .menu-content{
@@ -81,13 +79,13 @@ header h1{
 
 .book{
     background-color: antiquewhite;
-    border: 2px solid burlywood;
+    border: 1px solid burlywood;
     border-radius: 7px;
     box-shadow: -3px 3px 10px burlywood;
-    padding: 20px;
-    margin: 20px 10px 10px 10px;
-    width: 97%;
-    height: calc(100vh - 130px);
+    padding: 10px;
+    margin: 10px;
+    width: 95%;
+    height: calc(100vh - 110px);
     overflow-y: auto;
 }
 
@@ -114,5 +112,5 @@ p{
     object-fit: cover;
     border: 5px solid burlywood;
     border-radius: 7px;
-    filter: sepia(70%);
+    filter: sepia(40%);
 }
